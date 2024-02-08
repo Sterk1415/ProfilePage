@@ -34,9 +34,9 @@
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Name: Altus</x:String>
                     <x:String>Surname: Aucamp</x:String>
-                    <x:String>Bio:/</x:String>
+                    <x:String>Bio:</x:String>
                     <x:String>Passionate IT student that is eager to learn new things every day.</x:String>
-                    <x:String>Interests:/</x:String>
+                    <x:String>Interests:</x:String>
                     <x:String>Archery, Movies, and technology</x:String>
                 </x:Array>
             </CollectionView.ItemsSource>
