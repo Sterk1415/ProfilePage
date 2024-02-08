@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProfilePage.MainPage">
+
+    <Grid RowDefinitions="0.5*, 0.5*, 0.5*, 0.5*, 0.4*, 0.4*, 0.4*, 0*"
+          ColumnDefinitions="*, *, *"
+          Padding="10"
+          RowSpacing="2"
+          ColumnSpacing="2">
+
+        <Border WidthRequest="100"
+                HeightRequest="100"
+                Grid.Row="0"
+                Grid.Column="0"
+                Stroke="Black"
+                StrokeThickness="1"
+                StrokeShape="RoundRectangle 40,40,40,40">
+
+            <Image
+                    Source="dank.png"
+                    HeightRequest="88"
+                    WidthRequest="88"/>
+        </Border>
+
+        <Button Clicked="Button_Clicked" x:Name="Button1" Text="Edit"
+                Grid.Column="0"
+                Grid.Row="1"
+                HeightRequest="75"
+                WidthRequest="130"/>
+
+        <CollectionView Grid.Row="2" Grid.ColumnSpan="2">
+            <CollectionView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Name: Altus</x:String>
+                    <x:String>Surname: Aucamp</x:String>
+                    <x:String>Bio:/</x:String>
+                    <x:String>Passionate IT student that is eager to learn new things every day.</x:String>
+                    <x:String>Interests:/</x:String>
+                    <x:String>Archery, Movies, and technology</x:String>
+                </x:Array>
+            </CollectionView.ItemsSource>
+        </CollectionView>
+        
+        <Border WidthRequest="100"
+                HeightRequest="100"
+                Grid.Row="3"
+                Grid.Column="0"
+                Stroke="Black"
+                StrokeThickness="1"
+                StrokeShape="Rectangle 40,40,40,40">
+
+            <Image
+                    Source="altus_1.png"
+                    HeightRequest="98"
+                    WidthRequest="98"/>
+        </Border>
+
+        <Border WidthRequest="100"
+                HeightRequest="100"
+                Grid.Row="3"
+                Grid.Column="1"
+                Stroke="Black"
+                StrokeThickness="1"
+                StrokeShape="Rectangle 40,40,40,40">
+
+            <Image
+                    Source="altus_2.png"
+                    HeightRequest="98"
+                    WidthRequest="98"/>
+        </Border>
+
+        <Border WidthRequest="100"
+                HeightRequest="100"
+                Grid.Row="3"
+                Grid.Column="2"
+                Stroke="Black"
+                StrokeThickness="1"
+                StrokeShape="Rectangle 40,40,40,40">
+
+            <Image
+                    Source="altus_3.png"
+                    HeightRequest="98"
+                    WidthRequest="98"/>
+        </Border>
+
+    </Grid>
+
+</ContentPage>
